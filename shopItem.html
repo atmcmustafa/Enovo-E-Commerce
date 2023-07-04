@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E Commerce | Item</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- top header -->
+    <div
+      class="bg-green-400/40 py-4 text-gray-600 border-b-[2px] border-b-green-700 font-[600] hidden md:block w-full"
+    >
+      <div class="container mx-auto flex justify-between">
+        <div class="left flex gap-8">
+          <span>(+90) 555 555 55 55</span>
+          <span>Our Location</span>
+        </div>
+        <div class="middle">
+          <p>Super Value Deals - Save More with coupons</p>
+        </div>
+        <div class="right">
+          <a href="login-register.html">Log in</a> /
+          <a href="login-register.html">Sign Up</a>
+        </div>
+      </div>
+    </div>
+    <!-- top header -->
+
+    <!-- mobile menu start -->
+    <header
+      class="mobileMenu fixed w-full h-full -right-[999px] top-0 bg-white flex invisible transition-all duration-300 justify-center items-center text-black"
+    >
+      <nav>
+        <a class="quit absolute top-8 right-8 text-2xl" href="#"
+          ><i class="fas fa-x"></i
+        ></a>
+        <a class="block md:hidden mb-8" href="index.html"
+          ><img class="w-40" src="img/logo.svg" alt="logo"
+        /></a>
+        <div class="relative mb-8 flex">
+          <input
+            type="text"
+            placeholder="Search"
+            class="border p-2 outline-none rounded-md w-72 flex items-center justify-center"
+          />
+          <i
+            class="fas fa-magnifying-glass cursor-pointer text-xl absolute top-3 right-4"
+          ></i>
+        </div>
+        <ul class="flex flex-col gap-8 font-bold">
+          <li>
+            <a class="hover:text-green-700 hover:duration-300" href="index.html"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-green-700 hover:duration-300" href="shop.html"
+              >Shop</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-green-700 hover:duration-300"
+              href="myaccount.html"
+              >My Account</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-green-700 hover:duration-300"
+              href="compare.html"
+              >Compare</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-green-700 hover:duration-300"
+              href="login-register.html"
+              >Login</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- mobile menu end -->
+
+    <!-- navbar start -->
+
+    <header class="flex container items-center mt-8 justify-between">
+      <a class="block md:hidden" href="index.html"
+        ><img class="w-40 mr-12" src="img/logo.svg" alt="logo"
+      /></a>
+      <!-- left side -->
+      <nav class="gap-8 items-center hidden md:flex">
+        <a href="index.html"
+          ><img class="w-40 mr-12" src="img/logo.svg" alt="logo"
+        /></a>
+        <ul class="flex gap-8 font-bold">
+          <li>
+            <a class="hover:text-cyan-700 hover:duration-300" href="index.html"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-cyan-700 active-text hover:duration-300"
+              href="shop.html"
+              >Shop</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-cyan-700 hover:duration-300"
+              href="myaccount.html"
+              >My Account</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-cyan-700 hover:duration-300"
+              href="compare.html"
+              >Compare</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-cyan-700 hover:duration-300"
+              href="login-register.html"
+              >Login</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- right side -->
+      <div class="flex gap-8 items-center">
+        <div class="relative hidden md:flex">
+          <input
+            type="text"
+            placeholder="Search"
+            class="border p-2 outline-none rounded-md w-72 flex items-center justify-center"
+          />
+          <i
+            class="fas fa-magnifying-glass cursor-pointer text-xl absolute top-3 right-4"
+          ></i>
+        </div>
+        <div class="text-2xl flex gap-4">
+          <a href="compare.html">
+            <i class="fa-regular fa-heart cursor-pointer"></i
+          ></a>
+          <a href="cart.html"
+            ><i class="fa-solid fa-cart-shopping cursor-pointer"></i
+          ></a>
+          <div class="hamburger flex items-center md:hidden">
+            <i class="fa-solid fa-bars cursor-pointer"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- navbar end -->
+
+    <!-- item 1 -->
+    <section class="container my-24 flex flex-wrap gap-12">
+      <div class="flex basis-[600px] flex-1">
+        <div class="flex flex-col w-full">
+          <img class="main-img" src="img/product-8-1.jpg" />
+          <div class="flex w-full mt-6 gap-6">
+            <img
+              class="small-img w-24 md:w-60 object-contain"
+              src="img/product-8-1.jpg"
+            />
+            <img
+              class="small-img w-24 md:w-60 object-contain"
+              src="img/product-8-2.jpg"
+            />
+            <img
+              class="small-img w-24 md:w-60 object-contain"
+              src="img/product-8-1.jpg"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col basis-[600px] flex-1">
+        <h1 class="font-semibold text-5xl tracking-wide">Henley Shirt</h1>
+        <span class="border-b py-2"
+          >Brands:
+          <span class="text-cyan-700 font-semibold"> adidas</span></span
+        >
+        <div class="flex gap-6 items-center mt-6 border-b py-2">
+          <span class="text-cyan-700 text-4xl font-bold">$116</span>
+          <span class="text-gray-400 text-xl line-through">$729</span>
+          <span class="text-gray-600 text-lg">%76 Off</span>
+        </div>
+        <p class="my-4 text-gray-500">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+          repellendus dicta necessitatibus temporibus molestiae similique odio
+          dignissimos pariatur magni quis quas ratione! dignissimos pariatur
+          magni quis quas ratione! magni quis quas ratione!
+        </p>
+
+        <div class="my-6 font-semibold flex flex-col gap-2">
+          <span class="flex items-center gap-3 text-gray-500">
+            <i class="fa-solid fa-crown"></i> 1 Year AL Jazeera Brand Warranty
+          </span>
+          <span class="flex items-center gap-3 text-gray-500">
+            <i class="fa-solid fa-rotate-left"></i> 30 Days Return Policy
+          </span>
+          <span class="flex items-center gap-3 text-gray-500">
+            <i class="fa-regular fa-credit-card"></i>Cash on Delivery available
+          </span>
+        </div>
+
+        <div class="flex gap-2 items-center">
+          <span class="text-gray-500 font-semibold">Color</span>
+          <div class="flex gap-1 items-center">
+            <div
+              class="h-6 w-6 rounded-full bg-orange-600 cursor-pointer hover:w-8 hover:h-8"
+            ></div>
+            <div
+              class="h-6 w-6 rounded-full bg-pink-600 cursor-pointer hover:w-8 hover:h-8"
+            ></div>
+            <div
+              class="h-6 w-6 rounded-full bg-yellow-400 cursor-pointer hover:w-8 hover:h-8"
+            ></div>
+            <div
+              class="h-6 w-6 rounded-full bg-red-600 cursor-pointer hover:w-8 hover:h-8"
+            ></div>
+            <div
+              class="h-6 w-6 rounded-full bg-green-600 cursor-pointer hover:w-8 hover:h-8"
+            ></div>
+          </div>
+        </div>
+        <div class="flex gap-2 items-center my-6 text-gray-500">
+          <span class="font-semibold">Size</span>
+          <div class="flex gap-3 items-center">
+            <div
+              class="h-8 w-8 bg-cyan-700 flex items-center justify-center text-white cursor-pointer"
+            >
+              M
+            </div>
+            <div
+              class="h-8 w-8 bg-white border flex items-center justify-center text-black cursor-pointer hover:bg-cyan-700 hover:duration-300 hover:text-white"
+            >
+              L
+            </div>
+            <div
+              class="h-8 w-8 bg-white border flex items-center justify-center text-black cursor-pointer hover:bg-cyan-700 hover:duration-300 hover:text-white"
+            >
+              XL
+            </div>
+            <div
+              class="h-8 w-10 bg-white border flex items-center justify-center text-black cursor-pointer hover:bg-cyan-700 hover:duration-300 hover:text-white"
+            >
+              XXL
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-4 items-center pb-12 border-b">
+          <input
+            type="number"
+            name="number"
+            id="num"
+            value="1"
+            class="px-4 py-3 text-gray-500 font-semibold w-24 border outline-none"
+          />
+          <a href="billing-details.html">
+            <button
+              class="py-3 px-8 rounded-md bg-cyan-700 text-white hover:bg-white hover:text-cyan-700 hover:duration-300 hover:border-cyan-700 border"
+            >
+              Add to cart
+            </button></a
+          >
+          <div
+            class="border text-xl rounded-md border-gray-500 py-3 px-4 flex items-center hover:border-red-600 hover:duration-300"
+          >
+            <i
+              class="fa-regular fa-heart hover:text-red-600 overflow-hidden cursor-pointer"
+            ></i>
+          </div>
+        </div>
+
+        <div class="font-semibold text-gray-500 flex flex-col gap-2 mt-4">
+          <span>SKU: FWYT21KUJ</span>
+          <span>Tags: Cloth, Dress, Man</span>
+          <span>Availability: 8 items in stock</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- item 1 end -->
+
+    <div class="container flex gap-8 mb-8 items-center">
+      <h1
+        class="item-info text-xl md:text-3xl font-semibold active-text cursor-pointer"
+      >
+        Additional Info
+      </h1>
+      <h1
+        class="item-review text-xl md:text-3xl font-semibold text-gray-500 hover:text-cyan-700 hover:duration-300 cursor-pointer"
+      >
+        Reviews(3)
+      </h1>
+    </div>
+
+    <!-- reviews -->
+    <section
+      class="flex flex-col container flex-wrap w-full review-container hidden"
+    >
+      <!-- comment review -->
+      <div
+        class="basis-auto w-full flex-1 flex gap-4 my-12 items-center border-b py-4"
+      >
+        <div class="flex flex-col justify-center">
+          <img
+            class="w-24 rounded-full object-contain"
+            src="img/avatar-1.jpg"
+          />
+          <span class="font-bold text-gray-500 ml-3 mt-2">Jacky Chan</span>
+        </div>
+        <div>
+          <div class="flex text-xl gap-2 text-yellow-400 mb-2">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="mb-2">
+            Thank you very fast shipping from polland only 3 days
+          </p>
+          <span class="text-gray-400 font-semibold"
+            >December 4, 2023 at 3.12 am
+          </span>
+        </div>
+      </div>
+      <!-- comment review end -->
+      <!-- comment review -->
+      <div
+        class="basis-auto w-full flex-1 flex gap-4 items-center border-b pb-4"
+      >
+        <div class="flex flex-col justify-center">
+          <img
+            class="w-24 rounded-full object-contain"
+            src="img/avatar-2.jpg"
+          />
+          <span class="font-bold text-gray-500 ml-3 mt-2">Jacky Chan</span>
+        </div>
+        <div>
+          <div class="flex text-xl gap-2 text-yellow-400 mb-2">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="mb-2">
+            Thank you very fast shipping from polland only 3 days
+          </p>
+          <span class="text-gray-400 font-semibold"
+            >December 4, 2023 at 3.12 am
+          </span>
+        </div>
+      </div>
+      <!-- comment review end -->
+      <!-- comment review -->
+      <div
+        class="basis-auto w-full flex-1 flex gap-4 items-center border-b py-4"
+      >
+        <div class="flex flex-col justify-center">
+          <img
+            class="w-24 rounded-full object-contain"
+            src="img/avatar-3.jpg"
+          />
+          <span class="font-bold text-gray-500 ml-3 mt-2">Jacky Chan</span>
+        </div>
+        <div>
+          <div class="flex text-xl gap-2 text-yellow-400 mb-2">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="mb-2">
+            Thank you very fast shipping from polland only 3 days
+          </p>
+          <span class="text-gray-400 font-semibold"
+            >December 4, 2023 at 3.12 am
+          </span>
+        </div>
+      </div>
+      <!-- comment review end -->
+
+      <!-- add a comment -->
+      <div class="my-8">
+        <h2 class="font-semibold text-black text-2xl">Add A Review</h2>
+        <div class="flex text-xl gap-2 my-2">
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+
+        <div class="w-full mt-4">
+          <textarea
+            placeholder="Write a comment"
+            class="w-full border outline-none p-2"
+            name="textarea"
+            id="textarea"
+            cols="30"
+            rows="10"
+          ></textarea>
+
+          <div class="flex gap-2 flex-wrap">
+            <input
+              type="text"
+              class="basis-[600px] border flex-1 py-2 px-3 outline-none"
+              placeholder="Name"
+            />
+            <input
+              type="email"
+              class="basis-[600px] border flex-1 py-2 px-3 outline-none"
+              placeholder="Email"
+            />
+          </div>
+
+          <button
+            class="border-2 hover:bg-white hover:text-cyan-700 duration-300 border-cyan-700 bg-cyan-700 py-3 px-8 w-fit text-white mt-8 font-bold rounded-md"
+          >
+            Submit Review
+          </button>
+        </div>
+      </div>
+
+      <!-- add a comment end -->
+    </section>
+
+    <!-- reviews end -->
+
+    <!-- item details  -->
+    <section class="w-full basis-auto flex-wrap container item-container">
+      <!-- info 1 -->
+      <div class="border flex">
+        <div class="border-r w-1/2 py-2 px-3 text-gray-500 font-semibold">
+          Stand Up
+        </div>
+        <div class="border-r w-1/2 py-2 px-3 text-gray-500 font-semibold">
+          35*L x 24*W x 37-45 H
+        </div>
+      </div>
+      <!-- info 1 -->
+      <!-- info 1 -->
+      <div class="border flex">
+        <div class="border-r w-1/2 py-2 px-3 text-gray-500 font-semibold">
+          Folded(w/o wheels)
+        </div>
+        <div class="border-r w-1/2 py-2 px-3 text-gray-500 font-semibold">
+          35*L x 24*W x 37-45 H * 16.5 x W*12,5
+        </div>
+      </div>
+      <!-- info 1 -->
+      <!-- info 1 -->
+      <div class="border flex">
+        <div class="border-r w-1/2 py-2 px-3 text-gray-500 font-semibold">
+          Folded(w wheels)
+        </div>
+        <div class="border-r w-1/2 py-2 px-3 text-gray-500 font-semibold">
+          35*L x 24*W x 37
+        </div>
+      </div>
+      <!-- info 1 -->
+      <!-- info 1 -->
+      <div class="border flex">
+        <div class="border-r w-1/2 py-2 px-3 text-gray-500 font-semibold">
+          Door Pass Through
+        </div>
+        <div class="border-r w-1/2 py-2 px-3 text-gray-500 font-semibold">
+          24
+        </div>
+      </div>
+      <!-- info 1 -->
+      <!-- info 1 -->
+      <div class="border flex">
+        <div class="border-r w-1/2 py-2 px-3 text-gray-500 font-semibold">
+          Frame
+        </div>
+        <div class="border-r w-1/2 py-2 px-3 text-gray-500 font-semibold">
+          Aliminum
+        </div>
+      </div>
+      <!-- info 1 -->
+      <!-- info 1 -->
+      <div class="border flex">
+        <div class="border-r w-1/2 py-2 px-3 text-gray-500 font-semibold">
+          Weight(w/o wheels)
+        </div>
+        <div class="border-r w-1/2 py-2 px-3 text-gray-500 font-semibold">
+          20 LBS
+        </div>
+      </div>
+      <!-- info 1 -->
+      <!-- info 1 -->
+      <div class="border flex">
+        <div class="border-r w-1/2 py-2 px-3 text-gray-500 font-semibold">
+          Weight Capacity
+        </div>
+        <div class="border-r w-1/2 py-2 px-3 text-gray-500 font-semibold">
+          60 LBS
+        </div>
+      </div>
+      <!-- info 1 -->
+      <!-- info 1 -->
+      <div class="border flex">
+        <div class="border-r w-1/2 py-2 px-3 text-gray-500 font-semibold">
+          Width
+        </div>
+        <div class="border-r w-1/2 py-2 px-3 text-gray-500 font-semibold">
+          24
+        </div>
+      </div>
+      <!-- info 1 -->
+      <!-- info 1 -->
+      <div class="border flex">
+        <div class="border-r w-1/2 py-2 px-3 text-gray-500 font-semibold">
+          Handle height (ground to handle)
+        </div>
+        <div class="border-r w-1/2 py-2 px-3 text-gray-500 font-semibold">
+          37*45
+        </div>
+      </div>
+      <!-- info 1 -->
+      <!-- info 1 -->
+      <div class="border flex">
+        <div class="border-r w-1/2 py-2 px-3 text-gray-500 font-semibold">
+          Wheels
+        </div>
+        <div class="border-r w-1/2 py-2 px-3 text-gray-500 font-semibold">
+          12 air / wide track slick thread
+        </div>
+      </div>
+      <!-- info 1 -->
+      <!-- info 1 -->
+      <div class="border flex">
+        <div class="border-r w-1/2 py-2 px-3 text-gray-500 font-semibold">
+          Seat back height
+        </div>
+        <div class="border-r w-1/2 py-2 px-3 text-gray-500 font-semibold">
+          21.5
+        </div>
+      </div>
+      <!-- info 1 -->
+      <!-- info 1 -->
+      <div class="border flex">
+        <div class="border-r w-1/2 py-2 px-3 text-gray-500 font-semibold">
+          Head room (inside canopony)
+        </div>
+        <div class="border-r w-1/2 py-2 px-3 text-gray-500 font-semibold">
+          25*
+        </div>
+      </div>
+      <!-- info 1 -->
+      <!-- info 1 -->
+      <div class="border flex">
+        <div class="border-r w-1/2 py-2 px-3 text-gray-500 font-semibold">
+          Color
+        </div>
+        <div class="border-r w-1/2 py-2 px-3 text-gray-500 font-semibold">
+          Black, Blue, Red, White
+        </div>
+      </div>
+      <!-- info 1 -->
+      <!-- info 1 -->
+      <div class="border flex">
+        <div class="border-r w-1/2 py-2 px-3 text-gray-500 font-semibold">
+          Size
+        </div>
+        <div class="border-r w-1/2 py-2 px-3 text-gray-500 font-semibold">
+          M,S,L
+        </div>
+      </div>
+      <!-- info 1 -->
+    </section>
+
+    <!-- item details end -->
+
+    <!-- releate product -->
+
+    <h1 class="text-4xl font-semibold container mt-12">
+      <span class="text-cyan-700">Releate</span> Products
+    </h1>
+    <section class="container my-6 flex flex-wrap gap-8">
+      <!-- card 1 -->
+      <div
+        data-name="popular"
+        class="card border p-3 rounded-lg basis-80 flex-1 relative shadow-2xl"
+      >
+        <div>
+          <div class="img-container relative">
+            <span
+              class="rounded-full bg-gray-600 h-6 w-16 text-center left-8 top-8 text-white absolute"
+              >Popular</span
+            >
+            <a href="shopItem.html">
+              <img
+                src="img/product-9-1.jpg"
+                class="object-contain rounded-lg w-full top-img"
+            /></a>
+
+            <div
+              class="img-details justify-center items-center flex absolute top-72 mx-auto w-full gap-4"
+            >
+              <div
+                class="bg-white w-12 h-12 cursor-pointer rounded-full flex items-center justify-center"
+              >
+                <i class="fa-regular fa-eye"></i>
+              </div>
+              <div
+                class="bg-white w-12 h-12 cursor-pointer rounded-full flex items-center justify-center"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div
+                class="bg-white w-12 h-12 cursor-pointer rounded-full flex items-center justify-center"
+              >
+                <i class="fa-regular fa-share-from-square"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-500 text-lg mt-2">Clothing</p>
+          <h2 class="text-xl font-semibold mt-2">Colorful Pattern Shirts</h2>
+          <div class="flex text-xl gap-2 text-yellow-400 mt-2">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <div class="mt-4">
+            <span class="text-green-700 text-xl font-semibold">$453.55</span>
+            <span class="text-gray-700 ml-3 line-through">$753.25</span>
+          </div>
+        </div>
+
+        <div
+          class="absolute bottom-8 right-8 w-12 h-12 rounded-full bg-gray-500/30 flex justify-center items-center cursor-pointer"
+        >
+          <a href="shopItem.html">
+            <i class="fa-solid fa-cart-shopping text-xl"></i
+          ></a>
+        </div>
+      </div>
+      <!-- card 1 end -->
+      <!-- card 1 -->
+      <div
+        data-name="popular"
+        class="card border p-3 rounded-lg basis-80 flex-1 relative shadow-2xl"
+      >
+        <div>
+          <div class="img-container relative">
+            <span
+              class="rounded-full bg-gray-600 h-6 w-16 text-center left-8 top-8 text-white absolute"
+              >Popular</span
+            >
+            <a href="shopItem.html">
+              <img
+                src="img/product-5-1.jpg"
+                class="object-contain rounded-lg w-full top-img"
+            /></a>
+
+            <div
+              class="img-details justify-center items-center flex absolute top-72 mx-auto w-full gap-4"
+            >
+              <div
+                class="bg-white w-12 h-12 cursor-pointer rounded-full flex items-center justify-center"
+              >
+                <i class="fa-regular fa-eye"></i>
+              </div>
+              <div
+                class="bg-white w-12 h-12 cursor-pointer rounded-full flex items-center justify-center"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div
+                class="bg-white w-12 h-12 cursor-pointer rounded-full flex items-center justify-center"
+              >
+                <i class="fa-regular fa-share-from-square"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-500 text-lg mt-2">Clothing</p>
+          <h2 class="text-xl font-semibold mt-2">Colorful Pattern Shirts</h2>
+          <div class="flex text-xl gap-2 text-yellow-400 mt-2">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <div class="mt-4">
+            <span class="text-green-700 text-xl font-semibold">$453.55</span>
+            <span class="text-gray-700 ml-3 line-through">$753.25</span>
+          </div>
+        </div>
+
+        <div
+          class="absolute bottom-8 right-8 w-12 h-12 rounded-full bg-gray-500/30 flex justify-center items-center cursor-pointer"
+        >
+          <a href="shopItem.html">
+            <i class="fa-solid fa-cart-shopping text-xl"></i
+          ></a>
+        </div>
+      </div>
+      <!-- card 1 end -->
+      <!-- card 1 -->
+      <div
+        data-name="popular"
+        class="card border p-3 rounded-lg basis-80 flex-1 relative shadow-2xl"
+      >
+        <div>
+          <div class="img-container relative">
+            <span
+              class="rounded-full bg-gray-600 h-6 w-16 text-center left-8 top-8 text-white absolute"
+              >Popular</span
+            >
+            <a href="shopItem.html">
+              <img
+                src="img/product-3-1.jpg"
+                class="object-contain rounded-lg w-full top-img"
+            /></a>
+
+            <div
+              class="img-details justify-center items-center flex absolute top-72 mx-auto w-full gap-4"
+            >
+              <div
+                class="bg-white w-12 h-12 cursor-pointer rounded-full flex items-center justify-center"
+              >
+                <i class="fa-regular fa-eye"></i>
+              </div>
+              <div
+                class="bg-white w-12 h-12 cursor-pointer rounded-full flex items-center justify-center"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div
+                class="bg-white w-12 h-12 cursor-pointer rounded-full flex items-center justify-center"
+              >
+                <i class="fa-regular fa-share-from-square"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-500 text-lg mt-2">Clothing</p>
+          <h2 class="text-xl font-semibold mt-2">Colorful Pattern Shirts</h2>
+          <div class="flex text-xl gap-2 text-yellow-400 mt-2">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <div class="mt-4">
+            <span class="text-green-700 text-xl font-semibold">$453.55</span>
+            <span class="text-gray-700 ml-3 line-through">$753.25</span>
+          </div>
+        </div>
+
+        <div
+          class="absolute bottom-8 right-8 w-12 h-12 rounded-full bg-gray-500/30 flex justify-center items-center cursor-pointer"
+        >
+          <a href="shopItem.html">
+            <i class="fa-solid fa-cart-shopping text-xl"></i
+          ></a>
+        </div>
+      </div>
+      <!-- card 1 end -->
+      <!-- card 1 -->
+      <div
+        data-name="popular"
+        class="card border p-3 rounded-lg basis-80 flex-1 relative shadow-2xl"
+      >
+        <div>
+          <div class="img-container relative">
+            <span
+              class="rounded-full bg-gray-600 h-6 w-16 text-center left-8 top-8 text-white absolute"
+              >Popular</span
+            >
+            <a href="shopItem.html">
+              <img
+                src="img/product-2-1.jpg"
+                class="object-contain rounded-lg w-full top-img"
+            /></a>
+
+            <div
+              class="img-details justify-center items-center flex absolute top-72 mx-auto w-full gap-4"
+            >
+              <div
+                class="bg-white w-12 h-12 cursor-pointer rounded-full flex items-center justify-center"
+              >
+                <i class="fa-regular fa-eye"></i>
+              </div>
+              <div
+                class="bg-white w-12 h-12 cursor-pointer rounded-full flex items-center justify-center"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div
+                class="bg-white w-12 h-12 cursor-pointer rounded-full flex items-center justify-center"
+              >
+                <i class="fa-regular fa-share-from-square"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-500 text-lg mt-2">Clothing</p>
+          <h2 class="text-xl font-semibold mt-2">Colorful Pattern Shirts</h2>
+          <div class="flex text-xl gap-2 text-yellow-400 mt-2">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <div class="mt-4">
+            <span class="text-green-700 text-xl font-semibold">$453.55</span>
+            <span class="text-gray-700 ml-3 line-through">$753.25</span>
+          </div>
+        </div>
+
+        <div
+          class="absolute bottom-8 right-8 w-12 h-12 rounded-full bg-gray-500/30 flex justify-center items-center cursor-pointer"
+        >
+          <a href="shopItem.html">
+            <i class="fa-solid fa-cart-shopping text-xl"></i
+          ></a>
+        </div>
+      </div>
+      <!-- card 1 end -->
+    </section>
+
+    <!-- releate product end -->
+
+    <!-- newsletter -->
+
+    <section class="bg-green-400/40 w-full py-4 my-16">
+      <div
+        class="container text-black flex justify-between items-center flex-wrap text-center mx-auto"
+      >
+        <div class="flex items-center gap-4 text-lg font-bold">
+          <i class="fa-regular fa-envelope"></i>
+          <h2>Sign Up to Newsletter</h2>
+        </div>
+        <p class="font-bold">...and receive $25 coupon for first shopping.</p>
+        <div class="flex py-3">
+          <input
+            class="px-4 w-full outline-0"
+            type="text"
+            placeholder="Enter your email "
+          />
+          <button
+            class="text-white bg-black hover:bg-white hover:text-black border border-black hover:duration-300 px-8 py-2"
+          >
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- newsletter end -->
+
+    <!-- footer  -->
+
+    <footer class="container flex gap-12 flex-wrap my-12">
+      <div class="basis-80 flex-1">
+        <a href="index.html"> <img class="w-36" src="img/logo.svg" /></a>
+        <div>
+          <h2 class="my-2 text-lg font-bold mt-4">Contact</h2>
+          <p>
+            <span class="font-bold">Adress:</span> Lorem, ipsum dolor sit amet
+            consectetur adipisicing elit.
+          </p>
+          <p><span class="font-bold">Phone: </span>0555 555 5555</p>
+          <p><span class="font-bold">Hours: </span>08.00 / 17.00</p>
+        </div>
+        <div>
+          <h2 class="my-2 text-lg font-bold mt-4">Follow Me</h2>
+          <div class="text-lg flex gap-4">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="basis-40 flex-1">
+        <h2 class="my-2 text-xl font-bold mt-4">Adress</h2>
+        <ul class="flex flex-col gap-2 text-gray-500">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Delivery Information</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="login-register.html">Contact Us</a></li>
+          <li><a href="#">Support Center</a></li>
+        </ul>
+      </div>
+
+      <div class="basis-40 flex-1">
+        <h2 class="my-2 text-xl font-bold mt-4">My Account</h2>
+        <ul class="flex flex-col gap-2 text-gray-500">
+          <li><a href="login-register.html">Sıgn In</a></li>
+          <li><a href="cart.html">View Cart</a></li>
+          <li><a href="cart.html">My Wishlist</a></li>
+          <li><a href="cart.html">Track My Order</a></li>
+          <li><a href="login-register.html">Help</a></li>
+          <li><a href="billing-details.html">Order</a></li>
+        </ul>
+      </div>
+
+      <div class="basis-80 flex-1">
+        <h2 class="my-2 text-xl font-bold mt-4">Secured Payment Gateways</h2>
+        <div class="flex gap-3">
+          <img src="img/payment-method.png" />
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
